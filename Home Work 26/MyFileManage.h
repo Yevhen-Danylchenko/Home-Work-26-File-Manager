@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <locale>
 
 
 //======================== Робота з файлами =============================
@@ -153,6 +154,7 @@ void fileSize() {
 //========================= Інтерфейс користувача =============================
 
 void menu() {
+	setlocale(LC_ALL, "ukr");
 	int choice;
 	do {
 		std::cout << "1. Створити файл\n";
